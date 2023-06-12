@@ -1,4 +1,4 @@
-import{S as K,i as Q,s as R,k as i,q as r,a as T,l as s,m as o,r as l,h as a,c as M,n as f,b as U,C as t,D as N}from"../chunks/index.a12f4a43.js";function W(z){let h,p,e,w,_,x,b,H,C,k,E,A,n,I,u,P,j,m,q,B,g,D,S;return{c(){h=i("section"),p=i("div"),e=i("div"),w=i("p"),_=r(`Julian Bramley Burgess explores equilibriums and geometric principles in an experimental
+import{S as K,i as Q,s as R,k as i,q as r,a as T,l as s,m as o,r as l,h as a,c as M,n as f,b as U,C as t,D as N}from"../chunks/index.97b79440.js";function W(z){let h,p,e,w,_,x,b,H,C,k,E,A,n,I,u,P,j,m,q,B,g,D,S;return{c(){h=i("section"),p=i("div"),e=i("div"),w=i("p"),_=r(`Julian Bramley Burgess explores equilibriums and geometric principles in an experimental
 				way. His work includes hanging mobile installations, mechanically and hand plotted prints
 				and projections of digitally produced constructions.`),x=T(),b=i("p"),H=r(`Currently he experiments with creating hanging whippletree structures formed from regular
 				polygons. Finding equilibriums and balance is a key part to this work which look at the
