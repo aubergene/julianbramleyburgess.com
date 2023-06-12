@@ -1,13 +1,24 @@
 <script>
 	import NavLink from './NavLink.svelte';
+
+	let burgerActive = false;
+
+	function closeBurger() {
+		burgerActive = false;
+	}
 </script>
 
-<nav class="navbar" aria-label="main navigation">
+<svelte:window on:click={closeBurger} />
+
+<nav class="navbar is-fixed-top" aria-label="main navigation">
 	<div class="container is-max-desktop">
 		<div class="navbar-brand">
-			<span
+			<NavLink href="/">About</NavLink>
+			<a
+				on:click|stopPropagation={() => (burgerActive = !burgerActive)}
 				role="button"
 				class="navbar-burger"
+				class:is-active={burgerActive}
 				aria-label="menu"
 				aria-expanded="false"
 				data-target="navbarBasicExample"
@@ -15,12 +26,11 @@
 				<span aria-hidden="true" />
 				<span aria-hidden="true" />
 				<span aria-hidden="true" />
-			</span>
+			</a>
 		</div>
 
-		<div id="navbarBasicExample" class="navbar-menu">
+		<div id="navbarBasicExample" class="navbar-menu" class:is-active={burgerActive}>
 			<div class="navbar-start">
-				<NavLink href="/">About</NavLink>
 				<NavLink href="/cv">CV</NavLink>
 			</div>
 		</div>
