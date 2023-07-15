@@ -6,8 +6,9 @@
 			<ul>
 				<li>
 					<div>
-						2020 - <a href="https://2020.goldcomparts.show/artists/julian-bramley-burgess"
-							><b>Dreamspace</b></a
+						2020 - <a
+							href="https://2020.goldcomparts.show/artists/julian-bramley-burgess"
+							target="_blank"><b>Dreamspace</b></a
 						>
 					</div>
 					<div>— Chimera Garden - Goldsmiths, London</div>
@@ -24,11 +25,13 @@
 					</div>
 					<div>
 						— Horniman X Goldsmiths -
-						<a href="https://www.horniman.ac.uk/">Horniman Museum</a>, London
+						<a href="https://www.horniman.ac.uk/" target="_blank">Horniman Museum</a>, London
 					</div>
 				</li>
 				<li>
-					<div>2014 - <a href="http://holocenter.org/parallax"><b>Merry Times</b></a></div>
+					<div>
+						2014 - <a href="http://holocenter.org/parallax" target="_blank"><b>Merry Times</b></a>
+					</div>
 					<div>— Parallax - Holocenter - Center for Holographic Arts, New York</div>
 				</li>
 			</ul>
