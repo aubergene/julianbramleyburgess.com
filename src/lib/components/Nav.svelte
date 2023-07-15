@@ -35,6 +35,14 @@
 				<NavLink href="/cv">CV</NavLink>
 			</div>
 		</div>
+
+		<div class="navbar-end">
+			<div class="navbar-item">
+				<NavLink href="https://www.instagram.com/julianbramleyburgess/">
+					<img src="/instagram.svg" alt="Instagram" />
+				</NavLink>
+			</div>
+		</div>
 	</div>
 </nav>
 
