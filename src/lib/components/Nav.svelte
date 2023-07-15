@@ -31,6 +31,7 @@
 
 		<div id="navbarBasicExample" class="navbar-menu" class:is-active={burgerActive}>
 			<div class="navbar-start">
+				<NavLink href="/works">Works</NavLink>
 				<NavLink href="/cv">CV</NavLink>
 			</div>
 		</div>
