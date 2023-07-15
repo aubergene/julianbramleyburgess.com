@@ -5,29 +5,45 @@
 
 			<ul>
 				<li>
-					2020 - <a href="https://2020.goldcomparts.show/artists/julian-bramley-burgess"
-						><i>Dreamspace</i></a
-					> — Chimera Garden - Goldsmiths, London
+					<div>
+						2020 - <a href="https://2020.goldcomparts.show/artists/julian-bramley-burgess"
+							><b>Dreamspace</b></a
+						>
+					</div>
+					<div>— Chimera Garden - Goldsmiths, London</div>
 				</li>
 				<li>
-					2019 - <i>Genetic Construction</i> — So How’s That Working For You? - Goldsmiths, London
+					<div>
+						2019 - <b>Genetic Construction</b>
+					</div>
+					<div>— So How’s That Working For You? - Goldsmiths, London</div>
 				</li>
 				<li>
-					2019 - <i>Overcurrents</i> — Horniman X Goldsmiths -
-					<a href="https://www.horniman.ac.uk/">Horniman Museum</a>, London
+					<div>
+						2019 - <b>Overcurrents</b>
+					</div>
+					<div>
+						— Horniman X Goldsmiths -
+						<a href="https://www.horniman.ac.uk/">Horniman Museum</a>, London
+					</div>
 				</li>
 				<li>
-					2014 - <a href="http://holocenter.org/parallax"><i>Merry Times</i></a> — Parallax - Holocenter
-					- Center for Holographic Arts, New York
+					<div>2014 - <a href="http://holocenter.org/parallax"><b>Merry Times</b></a></div>
+					<div>— Parallax - Holocenter - Center for Holographic Arts, New York</div>
 				</li>
 			</ul>
 
 			<h2>Education</h2>
 
 			<ul>
-				<li>2022 - MA in Computational Arts (distinction) - Goldsmiths</li>
-				<li>2000 - BA in Computater Science - King's College London</li>
+				<li>MA — Computational Arts — Goldsmiths, University of London</li>
+				<li>BSc — Computater Science — King's College, University of London</li>
 			</ul>
 		</div>
 	</div>
 </section>
+
+<style>
+	.sec {
+	}
+</style>
