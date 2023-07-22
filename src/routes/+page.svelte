@@ -1,3 +1,7 @@
+<script>
+	import Newsletter from './contact/Newsletter.svelte';
+</script>
+
 <section class="section">
 	<div class="container is-max-desktop">
 		<div class="columns">
@@ -25,6 +29,12 @@
 					</p>
 				</div>
 			</div>
+		</div>
+		<div>
+			<br />
+			<br />
+			<br />
+			<Newsletter />
 		</div>
 	</div>
 </section>

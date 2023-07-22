@@ -16,6 +16,7 @@
 			<NavLink href="/">About</NavLink>
 			<NavLink href="/works">Works</NavLink>
 			<NavLink href="/cv">CV</NavLink>
+			<NavLink href="/contact">Contact</NavLink>
 			<NavLink href="https://www.instagram.com/julianbramleyburgess/">
 				<img src="/instagram.svg" alt="Instagram" style="opacity: 0.3" />
 			</NavLink>
