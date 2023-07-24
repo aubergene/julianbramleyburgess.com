@@ -9,8 +9,8 @@
 			target="_blank"
 		>
 			<div class="content">
-				<h2>Newsletter Subscription</h2>
-				<p>Very occasional emails, no spam</p>
+				<h4 class="is-4">Mailing list</h4>
+				<p>Very occasional emails, when I'm exhibiting or new works available</p>
 				<div class="mc-field-group">
 					<label for="mce-EMAIL"
 						>Email Address
@@ -19,8 +19,8 @@
 							name="EMAIL"
 							class="input required email"
 							id="mce-EMAIL"
-							required=""
-							value=""
+							required="true"
+							placeholder="name@example.com"
 						/>
 					</label>
 					<span id="mce-EMAIL-HELPERTEXT" class="helper_text" />
@@ -44,18 +44,6 @@
 							class="button"
 							value="Subscribe"
 						/>
-						<br />
-						<br />
-						<p class="brandingLogo" style="margin: 0px auto;">
-							<a
-								href="http://eepurl.com/ivHqgI"
-								title="Mailchimp - email marketing made easy and fun"
-								><img
-									src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-									alt="referral badge"
-								/></a
-							>
-						</p>
 					</div>
 				</div>
 			</div>

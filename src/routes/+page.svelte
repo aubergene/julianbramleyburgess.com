@@ -1,5 +1,5 @@
 <script>
-	import Newsletter from './contact/Newsletter.svelte';
+	import MailingList from './contact/MailingList.svelte';
 </script>
 
 <section class="section">
@@ -34,7 +34,7 @@
 			<br />
 			<br />
 			<br />
-			<Newsletter />
+			<MailingList />
 		</div>
 	</div>
 </section>
