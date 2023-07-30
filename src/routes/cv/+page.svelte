@@ -1,40 +1,33 @@
+<script>
+	import { csvParse } from 'd3-dsv';
+	import LinkMaybe from '$lib/components/LinkMaybe.svelte';
+
+	export let data;
+
+	let exhibitions;
+	$: {
+		exhibitions = csvParse(data.exhibitionsCsv);
+	}
+</script>
+
 <section class="section">
 	<div class="container is-max-desktop">
 		<div class="content">
 			<h2>Exhibitions</h2>
 
-			<ul>
-				<li>
-					<div>
-						2020 - <a
-							href="https://2020.goldcomparts.show/artists/julian-bramley-burgess"
-							target="_blank"><b>Dreamspace</b></a
-						>
-					</div>
-					<div>— Chimera Garden - Goldsmiths, London</div>
-				</li>
-				<li>
-					<div>
-						2019 - <b>Genetic Construction</b>
-					</div>
-					<div>— So How’s That Working For You? - Goldsmiths, London</div>
-				</li>
-				<li>
-					<div>
-						2019 - <b>Overcurrents</b>
-					</div>
-					<div>
-						— Horniman X Goldsmiths -
-						<a href="https://www.horniman.ac.uk/" target="_blank">Horniman Museum</a>, London
-					</div>
-				</li>
-				<li>
-					<div>
-						2014 - <a href="http://holocenter.org/parallax" target="_blank"><b>Merry Times</b></a>
-					</div>
-					<div>— Parallax - Holocenter - Center for Holographic Arts, New York</div>
-				</li>
-			</ul>
+			<dl>
+				{#each exhibitions as e}
+					<dt>
+						{e.year} <b><LinkMaybe href={e.work_url}>{e.work}</LinkMaybe></b>
+						— <LinkMaybe href={e.show_url}>{e.show_name}</LinkMaybe>
+					</dt>
+					<dd>
+						<LinkMaybe href={e.location_url}>{e.location}</LinkMaybe>
+						—
+						{e.city}
+					</dd>
+				{/each}
+			</dl>
 
 			<h2>Education</h2>
 
@@ -47,6 +40,9 @@
 </section>
 
 <style>
-	.sec {
+	dt {
+	}
+	dd {
+		margin-bottom: 1.2em;
 	}
 </style>
