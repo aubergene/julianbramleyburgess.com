@@ -1,4 +1,6 @@
 <script>
+	import '@fontsource/roboto-condensed';
+	import '../app.scss';
 	import Header from '$lib/components/Header.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -10,9 +12,3 @@
 <slot />
 
 <Footer />
-
-<style>
-	:global(.content, .title) {
-		font-family: 'Roboto Condensed', sans-serif;
-	}
-</style>

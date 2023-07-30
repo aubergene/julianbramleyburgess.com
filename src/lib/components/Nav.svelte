@@ -26,7 +26,6 @@
 
 <style>
 	.navbar {
-		font-family: 'Roboto Condensed', sans-serif;
 		border-top: 1px solid #ddd;
 		border-bottom: 1px solid #ddd;
 	}
