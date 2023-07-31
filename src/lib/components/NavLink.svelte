@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 
+	export let classes;
 	export let href;
 	export let target;
 
@@ -15,10 +16,19 @@
 	}
 </script>
 
-<a {href} aria-current={active} class="navbar-item" class:is-active={active} {target}><slot /></a>
+<a {href} aria-current={active} class="navbar-item {classes}" class:is-active={active} {target}
+	><slot /></a
+>
 
 <style>
-	.is-active {
-		background-color: #7a7a7a;
+	.navbar-item,
+	.navbar-item.is-active {
+		color: #666;
+		background-color: #fff;
+		text-transform: uppercase;
+	}
+	.navbar-item:hover {
+		color: #000;
+		background-color: #fff;
 	}
 </style>
