@@ -19,10 +19,7 @@
 	<div class="container">
 		<div class="navbar-brand">
 			<NavLink href="/">Julian Bramley Burgess</NavLink>
-			<NavLink
-				href="https://www.instagram.com/julianbramleyburgess/"
-				classes="is-hidden-desktop-only"
-			>
+			<NavLink href="https://www.instagram.com/julianbramleyburgess/" classes="is-hidden-desktop">
 				<img src="/instagram.svg" alt="Instagram" style="opacity: 0.4" />
 			</NavLink>
 
