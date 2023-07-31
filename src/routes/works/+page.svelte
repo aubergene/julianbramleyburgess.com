@@ -1,33 +1,33 @@
+<script>
+	export let data;
+
+	$: ({ works_index } = data);
+</script>
+
 <section class="section">
 	<div class="container">
-		<div class="columns">
-			<div class="column">
-				<img src="/img/works/kore-01.jpg" alt="Kore" />
-			</div>
-			<div class="column">
-				<div class="content">
-					<h2>Kore</h2>
-					<p>
-						2023<br />
-						Plywood, monofilament, aluminium, milk paint
-					</p>
+		<div class="grid">
+			{#each works_index as { slug, name }}
+				<div class="item">
+					<a href="/works/{slug}">
+						<div class="thumb" style="background-image: url(/img/works/{slug}-01.jpg)"></div>
+						<div>{name}</div>
+					</a>
 				</div>
-			</div>
-		</div>
-
-		<div class="columns">
-			<div class="column">
-				<img src="/img/works/barre-01.jpg" alt="Kore" />
-			</div>
-			<div class="column">
-				<div class="content">
-					<h2>Barre</h2>
-					<p>
-						2023<br />
-						Plywood, monofilament, aluminium, indian ink and acrlyic paint
-					</p>
-				</div>
-			</div>
+			{/each}
 		</div>
 	</div>
 </section>
+
+<style>
+	.grid {
+		display: flex;
+		gap: 16px;
+	}
+	.thumb {
+		background-size: cover;
+		height: 200px;
+		min-width: 300px;
+		max-width: 400px;
+	}
+</style>

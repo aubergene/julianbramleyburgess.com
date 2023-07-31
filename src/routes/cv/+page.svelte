@@ -1,13 +1,12 @@
 <script>
-	import { csvParse } from 'd3-dsv';
+	import { groups } from 'd3-array';
 	import LinkMaybe from '$lib/components/LinkMaybe.svelte';
-	import { page } from '$app/stores';
 
 	export let data;
 
-	let exhibitions;
+	let exhibitionsByYear;
 	$: {
-		exhibitions = csvParse(data.exhibitionsCsv);
+		exhibitionsByYear = groups(data.exhibitions, (d) => d.year);
 	}
 </script>
 
@@ -16,35 +15,39 @@
 		<div class="content">
 			<h2>Exhibitions</h2>
 
-			<dl>
-				{#each exhibitions as e}
-					<dt>
-						<span class="year">{e.year}</span>
-						<b><LinkMaybe href={e.work_url}>{e.work}</LinkMaybe></b>
-						— <LinkMaybe href={e.show_url}>{e.show_name}</LinkMaybe>
-					</dt>
-					<dd>
-						<LinkMaybe href={e.location_url}>{e.location}</LinkMaybe>
-						—
-						{e.city}
-					</dd>
+			<div class="grid-year">
+				{#each exhibitionsByYear as [year, exhibitions]}
+					<div>{year}</div>
+					<div>
+						{#each exhibitions as e}
+							<div>
+								<i><LinkMaybe href={e.work_url}>{e.work}</LinkMaybe></i>
+								—
+								<LinkMaybe href={e.show_url}>{e.show_name}</LinkMaybe>
+								<LinkMaybe href={e.location_url}>{e.location}</LinkMaybe>
+								{e.city}
+							</div>
+						{/each}
+					</div>
 				{/each}
-			</dl>
+			</div>
 
 			<h2>Education</h2>
 
-			<h3>2020</h3>
-			<p>MA — Computational Arts — Goldsmiths, University of London</p>
-
-			<h3>2000</h3>
-			<p>BSc — Computater Science — King's College, University of London</p>
+			<div class="grid-year">
+				<div>2020</div>
+				<div>MA — Computational Arts — Goldsmiths, University of London</div>
+				<div>2000</div>
+				<div>BSc — Computater Science — King's College, University of London</div>
+			</div>
 		</div>
 	</div>
 </section>
 
 <style>
-	dd {
-		margin-left: 400px;
-		margin-bottom: 1.2em;
+	.grid-year {
+		display: grid;
+		gap: 0 3em;
+		grid-template-columns: 60px auto;
 	}
 </style>

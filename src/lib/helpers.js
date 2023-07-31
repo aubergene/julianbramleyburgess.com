@@ -19,3 +19,11 @@ export function to_sentence(
 export function compact(arr) {
 	return arr.filter((d) => d !== undefined && d !== null);
 }
+
+export function slugify(str) {
+	return str
+		.toLowerCase()
+		.replaceAll(/[^a-z0-9]+/g, ' ')
+		.trim()
+		.replaceAll(/\s+/g, '-');
+}
