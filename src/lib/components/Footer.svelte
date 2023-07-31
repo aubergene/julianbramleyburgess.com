@@ -5,3 +5,10 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	p {
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+</style>
