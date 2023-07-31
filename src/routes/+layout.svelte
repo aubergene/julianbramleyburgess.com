@@ -1,12 +1,21 @@
 <script>
-	import '@fontsource/roboto-condensed';
+	import { page } from '$app/stores';
+	import '@fontsource/roboto-condensed/300.css';
 	import '../app.scss';
-	import Header from '$lib/components/Header.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+
+	import { to_sentence, site_name } from '$lib/helpers.js';
 </script>
 
-<Header />
+<svelte:head>
+	<title>
+		{to_sentence([$page.data.title, site_name], {
+			two_words_connector: ' | '
+		})}
+	</title>
+</svelte:head>
+
 <Nav />
 
 <slot />

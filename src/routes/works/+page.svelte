@@ -1,5 +1,5 @@
 <section class="section">
-	<div class="container is-max-desktop">
+	<div class="container">
 		<div class="columns">
 			<div class="column">
 				<img src="/img/works/kore-01.jpg" alt="Kore" />

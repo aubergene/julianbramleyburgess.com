@@ -3,7 +3,7 @@
 </script>
 
 <section class="section">
-	<div class="container is-max-desktop">
+	<div class="container">
 		<div class="columns">
 			<div class="column">
 				<img
@@ -29,12 +29,6 @@
 					</p>
 				</div>
 			</div>
-		</div>
-		<div>
-			<br />
-			<br />
-			<br />
-			<MailingList />
 		</div>
 	</div>
 </section>
