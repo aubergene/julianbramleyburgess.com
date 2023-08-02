@@ -5,7 +5,7 @@
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
-	import { to_sentence, site_name } from '$lib/helpers.js';
+	import { to_sentence, site_name } from '$lib/js/helpers.js';
 </script>
 
 <svelte:head>

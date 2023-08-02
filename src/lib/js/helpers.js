@@ -27,3 +27,11 @@ export function slugify(str) {
 		.trim()
 		.replaceAll(/\s+/g, '-');
 }
+
+export function pluck(obj, ...keys) {
+	const out = {};
+	keys.forEach((k) => {
+		out[k] = obj[k];
+	});
+	return out;
+}

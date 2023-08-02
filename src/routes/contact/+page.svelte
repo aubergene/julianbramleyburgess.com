@@ -1,7 +1,7 @@
 <script>
 	import MailingList from './MailingList.svelte';
 
-	import { email } from '$lib/helpers.js';
+	import { email } from '$lib/js/helpers.js';
 </script>
 
 <section class="section">

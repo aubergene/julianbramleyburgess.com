@@ -1,16 +1,17 @@
 <script>
 	export let data;
 
-	$: ({ works_index } = data);
+	$: ({ works_index, work_images } = data);
 </script>
 
 <section class="section">
 	<div class="container">
 		<div class="works">
 			{#each works_index as { slug, name }}
+				{@const img = work_images.get(`/${slug}/${slug}-01.jpg`)}
 				<div class="work">
 					<a href="/works/{slug}">
-						<div class="thumb" style="background-image: url(/img/works/{slug}-01.jpg)"></div>
+						<div class="thumb" style="background-image: url({img.src})"></div>
 						<div>{name}</div>
 					</a>
 				</div>
