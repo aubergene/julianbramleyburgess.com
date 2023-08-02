@@ -6,9 +6,9 @@
 
 <section class="section">
 	<div class="container">
-		<div class="grid">
+		<div class="works">
 			{#each works_index as { slug, name }}
-				<div class="item">
+				<div class="work">
 					<a href="/works/{slug}">
 						<div class="thumb" style="background-image: url(/img/works/{slug}-01.jpg)"></div>
 						<div>{name}</div>
@@ -20,14 +20,18 @@
 </section>
 
 <style>
-	.grid {
+	.works {
 		display: flex;
 		gap: 16px;
+		flex-wrap: wrap;
+	}
+	.work {
+		flex-grow: 1;
 	}
 	.thumb {
 		background-size: cover;
-		height: 200px;
+		aspect-ratio: 4/3;
 		min-width: 300px;
-		max-width: 400px;
+		width: 100%;
 	}
 </style>
