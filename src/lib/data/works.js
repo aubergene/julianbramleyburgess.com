@@ -21,7 +21,7 @@ export const works = workRows;
 export const works_by_slug = new Map(works.map((d) => [d.slug, d]));
 
 const work_images_raw = import.meta.glob('$lib/assets/works/**/*.jpg', {
-	query: { width: 300, height: 300, format: 'webp', as: 'metadata' }
+	query: { w: 1200, h: 900, format: 'webp', as: 'metadata' }
 });
 
 const keys = Object.keys(work_images_raw);
