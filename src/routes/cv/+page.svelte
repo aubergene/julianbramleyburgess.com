@@ -20,7 +20,7 @@
 					<div>{year}</div>
 					<div>
 						{#each exhibitions as e}
-							<div>
+							<div class="item">
 								<i><LinkMaybe href={e.work_url}>{e.work}</LinkMaybe></i>
 								—
 								<LinkMaybe href={e.show_url}>{e.show_name}</LinkMaybe>
@@ -48,6 +48,9 @@
 	.grid-year {
 		display: grid;
 		gap: 0 3em;
-		grid-template-columns: 60px auto;
+		grid-template-columns: 2em auto;
+	}
+	.item {
+		margin-bottom: 1em;
 	}
 </style>
