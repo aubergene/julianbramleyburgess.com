@@ -1,6 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 	import '@fontsource/roboto-condensed/300.css';
+	import '@fontsource/roboto-condensed/400.css';
 	import '../app.scss';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
