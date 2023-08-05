@@ -1,5 +1,5 @@
 <script>
-	import MailingList from './MailingList.svelte';
+	import MailingList from '$lib/components/MailingList.svelte';
 
 	import { email } from '$lib/js/helpers.js';
 </script>
