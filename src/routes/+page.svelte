@@ -1,7 +1,3 @@
-<script>
-	import MailingList from './contact/MailingList.svelte';
-</script>
-
 <section class="section">
 	<div class="container">
 		<div class="columns">
