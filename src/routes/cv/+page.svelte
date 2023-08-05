@@ -51,6 +51,9 @@
 		grid-template-columns: 2em auto;
 	}
 	.item {
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
+	}
+	.item:last-child {
+		margin-bottom: 2em;
 	}
 </style>
