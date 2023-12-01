@@ -13,6 +13,15 @@
 <section class="section">
 	<div class="container">
 		<div class="content">
+			<h2>Education</h2>
+
+			<div class="grid-year">
+				<div>2020</div>
+				<div>MA — Computational Arts — Goldsmiths, University of London</div>
+				<div>2000</div>
+				<div>BSc — Computater Science — King's College, University of London</div>
+			</div>
+
 			<h2>Exhibitions</h2>
 
 			<div class="grid-year">
@@ -32,13 +41,23 @@
 				{/each}
 			</div>
 
-			<h2>Education</h2>
+			<h2>Exhibitions</h2>
 
 			<div class="grid-year">
-				<div>2020</div>
-				<div>MA — Computational Arts — Goldsmiths, University of London</div>
-				<div>2000</div>
-				<div>BSc — Computater Science — King's College, University of London</div>
+				{#each residenciesByYear as [year, exhibitions]}
+					<div>{year}</div>
+					<div>
+						{#each exhibitions as e}
+							<div class="item">
+								<i><LinkMaybe href={e.work_url}>{e.work}</LinkMaybe></i>
+								—
+								<LinkMaybe href={e.show_url}>{e.show_name}</LinkMaybe>
+								<LinkMaybe href={e.location_url}>{e.location}</LinkMaybe>
+								{e.city}
+							</div>
+						{/each}
+					</div>
+				{/each}
 			</div>
 		</div>
 	</div>
