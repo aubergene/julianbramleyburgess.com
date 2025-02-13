@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
+	import { stopPropagation } from 'svelte/legacy';
+
 	import NavLink from './NavLink.svelte';
 
-	let burgerActive = false;
+	let burgerActive = $state(false);
 
 	function toggle() {
 		burgerActive = !burgerActive;
@@ -13,7 +15,7 @@
 	}
 </script>
 
-<svelte:window on:click={closeBurger} />
+<svelte:window onclick={closeBurger} />
 
 <nav class="navbar is-fixed-top" aria-label="main navigation">
 	<div class="container">
@@ -27,12 +29,12 @@
 				class="navbar-burger"
 				aria-label="menu"
 				aria-expanded={burgerActive}
-				on:click|stopPropagation={toggle}
-				on:keypress={toggle}
+				onclick={stopPropagation(toggle)}
+				onkeypress={toggle}
 			>
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
-				<span aria-hidden="true" />
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
 			</span>
 		</div>
 		<div class="navbar-menu navbar-end" class:is-active={burgerActive}>

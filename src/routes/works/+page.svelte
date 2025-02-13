@@ -1,7 +1,7 @@
-<script>
-	export let data;
+<script lang="ts">
+	let { data } = $props();
 
-	$: ({ works_index, work_images } = data);
+	let { works_index, work_images } = $derived(data);
 </script>
 
 <section class="section">

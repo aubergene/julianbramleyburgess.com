@@ -1,13 +1,11 @@
-<script>
+<script lang="ts">
 	import { groups } from 'd3-array';
 	import LinkMaybe from '$lib/components/LinkMaybe.svelte';
 
-	export let data;
+	let { data } = $props();
 
-	let exhibitionsByYear;
-	$: {
-		exhibitionsByYear = groups(data.exhibitions, (d) => d.year);
-	}
+	let exhibitionsByYear = $derived(groups(data.exhibitions, (d) => d.year));
+	
 </script>
 
 <section class="section">

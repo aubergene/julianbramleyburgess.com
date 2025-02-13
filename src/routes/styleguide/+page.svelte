@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import MailingList from '$lib/components/MailingList.svelte';
 </script>
 

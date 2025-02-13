@@ -1,10 +1,9 @@
-<script>
-	export let href;
-	export let target;
+<script lang="ts">
+	let { href, target, children } = $props();
 </script>
 
 {#if href}
-	<a {href} {target}><slot /></a>
+	<a {href} {target}>{@render children?.()}</a>
 {:else}
-	<slot />
+	{@render children?.()}
 {/if}

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 	import '@fontsource/roboto-condensed/300.css';
 	import '@fontsource/roboto-condensed/400.css';
@@ -7,6 +7,11 @@
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { to_sentence, site_name } from '$lib/js/helpers.js';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -19,6 +24,6 @@
 
 <Nav />
 
-<slot />
+{@render children?.()}
 
 <Footer />

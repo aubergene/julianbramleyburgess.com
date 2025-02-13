@@ -1,6 +1,4 @@
-<script>
-	import MailingList from '$lib/components/MailingList.svelte';
-
+<script lang="ts">
 	import { email } from '$lib/js/helpers.js';
 </script>
 
@@ -22,7 +20,5 @@
 				<br />
 			</p>
 		</div>
-
-		<MailingList />
 	</div>
 </section>

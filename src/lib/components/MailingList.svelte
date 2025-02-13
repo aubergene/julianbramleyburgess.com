@@ -23,11 +23,11 @@
 							placeholder="name@example.com"
 						/>
 					</label>
-					<span id="mce-EMAIL-HELPERTEXT" class="helper_text" />
+					<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
 				</div>
 				<div id="mce-responses" class="clear foot">
-					<div class="response" id="mce-error-response" style="display: none;" />
-					<div class="response" id="mce-success-response" style="display: none;" />
+					<div class="response" id="mce-error-response" style="display: none;"></div>
+					<div class="response" id="mce-success-response" style="display: none;"></div>
 				</div>
 				<div style="position: absolute; left: -5000px;" aria-hidden="true">
 					/* real people should not fill this in and expect good things - do not remove this or risk
@@ -49,10 +49,4 @@
 			</div>
 		</form>
 	</div>
-	<script
-		type="text/javascript"
-		src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-	></script><script type="text/javascript">
-(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]=EMAIL;ftypes[0]=merge;,fnames[1]=FNAME;ftypes[1]=merge;,fnames[2]=LNAME;ftypes[2]=merge;,fnames[3]=ADDRESS;ftypes[3]=merge;,fnames[4]=PHONE;ftypes[4]=merge;,fnames[5]=BIRTHDAY;ftypes[5]=merge;false}(jQuery));var $mcj = jQuery.noConflict(true);
-	</script>
 </div>
