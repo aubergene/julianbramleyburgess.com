@@ -4,5 +4,5 @@ import { imagetools } from 'vite-imagetools';
 import dsv from '@rollup/plugin-dsv';
 
 export default defineConfig({
-	plugins: [sveltekit(), imagetools(), dsv()]
+	plugins: [sveltekit(), imagetools(), dsv()],
 });
