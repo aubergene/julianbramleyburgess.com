@@ -17,7 +17,7 @@
 <svelte:head>
 	<title>
 		{to_sentence([$page.data.title, site_name], {
-			two_words_connector: ' | '
+			two_words_connector: ' | ',
 		})}
 	</title>
 </svelte:head>
