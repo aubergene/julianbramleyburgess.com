@@ -15,23 +15,23 @@
 	},
 	"devDependencies": {
 		"@fontsource/roboto-condensed": "^5.1.1",
+		"@picocss/pico": "^2.0.6",
 		"@rollup/plugin-dsv": "^3.0.5",
 		"@sveltejs/adapter-static": "^3.0.8",
-		"@sveltejs/kit": "^2.17.1",
+		"@sveltejs/kit": "^2.17.2",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
-		"bulma": "^0.9.4",
+		"@types/node": "^22.13.4",
 		"d3-array": "^3.2.4",
 		"d3-dsv": "^3.0.1",
 		"gh-pages": "^6.3.0",
 		"globals": "^15.14.0",
 		"html-minifier-terser": "^7.2.0",
 		"mdsvex": "^0.12.3",
-		"svelte-check": "^4.0.0",
 		"prettier": "^3.5.0",
 		"prettier-plugin-svelte": "^3.3.3",
-		"sass": "^1.84.0",
-		"typescript": "^5.0.0",
 		"svelte": "^5.20.0",
+		"svelte-check": "^4.0.0",
+		"typescript": "^5.0.0",
 		"vite-imagetools": "^7.0.5"
 	}
 }

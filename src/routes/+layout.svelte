@@ -22,7 +22,9 @@
 	</title>
 </svelte:head>
 
-<Nav />
+<header>
+	<Nav />
+</header>
 
 {@render children?.()}
 

@@ -4,19 +4,17 @@
 	let { works_index, work_images } = $derived(data);
 </script>
 
-<section class="section">
-	<div class="container">
-		<div class="works">
-			{#each works_index as { slug, name }}
-				{@const img = work_images.get(`/${slug}/${slug}-01.jpg`)}
-				<div class="work">
-					<a href="/works/{slug}">
-						<div class="thumb" style="background-image: url({img.src})"></div>
-						<div>{name}</div>
-					</a>
-				</div>
-			{/each}
-		</div>
+<section class="container">
+	<div class="grid">
+		{#each works_index as { slug, name }}
+			{@const img = work_images.get(`/${slug}/${slug}-01.jpg`)}
+			<div class="work">
+				<a href="/works/{slug}">
+					<div class="thumb" style="background-image: url({img.src})"></div>
+					<div>{name}</div>
+				</a>
+			</div>
+		{/each}
 	</div>
 </section>
 

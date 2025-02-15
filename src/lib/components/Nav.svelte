@@ -17,34 +17,19 @@
 
 <svelte:window onclick={closeBurger} />
 
-<nav class="navbar is-fixed-top" aria-label="main navigation">
-	<div class="container">
-		<div class="navbar-brand">
-			<NavLink href="/">Julian Bramley Burgess</NavLink>
-			<NavLink href="https://www.instagram.com/julianbramleyburgess/" classes="is-hidden-desktop">
-				<img src="/instagram.svg" alt="Instagram" style="opacity: 0.4" />
+<nav class="container">
+	<ul>
+		<li><NavLink href="/"><strong>Julian Bramley Burgess</strong></NavLink></li>
+	</ul>
+	<ul>
+		<li><NavLink href="/">About</NavLink></li>
+		<li><NavLink href="/works">Works</NavLink></li>
+		<li><NavLink href="/cv">CV</NavLink></li>
+		<li><NavLink href="/contact">Contact</NavLink></li>
+		<li>
+			<NavLink href="https://www.instagram.com/julianbramleyburgess/" target="_blank"
+				><img src="/instagram.svg" alt="Instagram" style="opacity: 0.4" />
 			</NavLink>
-
-			<span
-				class="navbar-burger"
-				aria-label="menu"
-				aria-expanded={burgerActive}
-				onclick={stopPropagation(toggle)}
-				onkeypress={toggle}
-			>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-				<span aria-hidden="true"></span>
-			</span>
-		</div>
-		<div class="navbar-menu navbar-end" class:is-active={burgerActive}>
-			<NavLink href="/">About</NavLink>
-			<NavLink href="/works">Works</NavLink>
-			<NavLink href="/cv">CV</NavLink>
-			<NavLink href="/contact">Contact</NavLink>
-			<NavLink href="https://www.instagram.com/julianbramleyburgess/">
-				<img src="/instagram.svg" alt="Instagram" style="opacity: 0.4" />
-			</NavLink>
-		</div>
-	</div>
+		</li>
+	</ul>
 </nav>

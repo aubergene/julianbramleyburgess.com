@@ -21,7 +21,7 @@ export const works = workRows;
 export const works_by_slug = new Map(works.map((d) => [d.slug, d]));
 
 const work_images_raw = import.meta.glob('$lib/assets/works/**/*.jpg', {
-	query: { w: 1200, h: 900, format: 'webp', as: 'metadata' }
+	query: { w: 1200, h: 900, format: 'webp', as: 'metadata' },
 });
 
 const keys = Object.keys(work_images_raw);
@@ -34,6 +34,6 @@ export const load_work_images = Promise.all(work_image_imports).then((image_impo
 			const key = keys[i].replace(img_base, '');
 			const values = pluck(img.default, 'src', 'width', 'height');
 			return [key, values];
-		})
+		}),
 	);
 });
