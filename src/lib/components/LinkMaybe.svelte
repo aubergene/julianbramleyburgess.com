@@ -1,5 +1,12 @@
 <script lang="ts">
-	let { href, target, children } = $props();
+	import type { Snippet } from 'svelte';
+
+	interface Props {
+		href: string;
+		target?: '_blank';
+		children?: Snippet;
+	}
+	let { href, target, children }: Props = $props();
 </script>
 
 {#if href}
