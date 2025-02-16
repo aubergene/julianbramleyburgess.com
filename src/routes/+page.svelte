@@ -1,11 +1,8 @@
 <section class="container">
 	<div class="grid">
 		<div>
-			<img
-				class="has-ratio"
-				width="1024"
-				height="768"
-				src="/img/julian-bramley-burgess-1024.jpg"
+			<enhanced:img
+				src="$lib/assets/julian-bramley-burgess-1024.jpg"
 				alt="Julian Bramley Burgess"
 			/>
 		</div>
