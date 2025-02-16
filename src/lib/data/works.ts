@@ -26,14 +26,9 @@ const work_images_by_path = Object.entries(work_images).map(
 	([path, img]) => [basename(path), img] as const,
 );
 
-// console.log(work_images_by_path);
+export const images_by_slug = (slug: string) =>
+	work_images_by_path.filter(([path]) => path.startsWith(slug)).flatMap(([_, img]) => img);
 
-export const images_by_slug = (slug: string) => {
-	console.log(work_images_by_path);
-	return work_images_by_path.filter(([path]) => path.startsWith(slug)).flatMap(([_, img]) => img);
-};
-
-// Convert parsed CSV rows to a typed array
 export const works: Work[] = workRows.map((row) => {
 	const slug = slugify(row.name);
 	const images = images_by_slug(slug);

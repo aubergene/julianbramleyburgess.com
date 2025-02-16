@@ -14,16 +14,17 @@
 			</p>
 		</div>
 		<div>
-			{#each work_images as img}
-				<!-- <img src={img.src} width={img.width} height={img.height} alt={work.name} /> -->
-				<enhanced:img src={img.default} alt="some alt text" />
+			{#each work_images as img, i}
+				<div class="img">
+					<enhanced:img src={img.default} alt="{work.name} {i}" />
+				</div>
 			{/each}
 		</div>
 	</div>
 </section>
 
 <style>
-	img {
+	.img {
 		margin-bottom: 1em;
 	}
 </style>

@@ -1,4 +1,4 @@
-import exhibitions from '$lib/data/exhibitions.csv';
+import { exhibitions } from '$lib/data/exhibitions';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = () => {

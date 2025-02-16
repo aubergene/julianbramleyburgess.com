@@ -1,21 +1,6 @@
 <script lang="ts">
-	import { stopPropagation } from 'svelte/legacy';
-
 	import NavLink from './NavLink.svelte';
-
-	let burgerActive = $state(false);
-
-	function toggle() {
-		burgerActive = !burgerActive;
-		console.log(burgerActive);
-	}
-
-	function closeBurger() {
-		burgerActive = false;
-	}
 </script>
-
-<svelte:window onclick={closeBurger} />
 
 <nav class="container">
 	<ul>
