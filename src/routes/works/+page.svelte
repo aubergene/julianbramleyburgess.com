@@ -1,36 +1,39 @@
 <script lang="ts">
 	let { data } = $props();
 
-	let { works_index, work_images } = $derived(data);
+	let { works_index } = $derived(data);
 </script>
 
 <section class="container">
-	<div class="grid">
-		{#each works_index as { slug, name }}
-			{@const img = work_images.get(`/${slug}/${slug}-01.jpg`)}
+	<div class="works">
+		{#each works_index as { slug, name, year, lead_img }}
 			<div class="work">
-				<a href="/works/{slug}">
-					<div class="thumb" style="background-image: url({img.src})"></div>
-					<div>{name}</div>
-				</a>
+				<div class="thumb">
+					<a href="/works/{slug}">
+						<enhanced:img src={lead_img.default} alt={slug} />
+					</a>
+				</div>
+				<div>
+					<div class="name">
+						<a href="/works/{slug}">{name}</a>
+						<div class="year">{year}</div>
+					</div>
+				</div>
 			</div>
 		{/each}
 	</div>
 </section>
 
 <style>
-	.works {
+	.work {
 		display: flex;
 		gap: 16px;
-		flex-wrap: wrap;
-	}
-	.work {
-		flex-grow: 1;
+		margin-top: 2em;
 	}
 	.thumb {
-		background-size: cover;
-		aspect-ratio: 4/3;
-		min-width: 300px;
-		width: 100%;
+		width: 30%;
+	}
+	.year {
+		color: var(--pico-muted-color);
 	}
 </style>

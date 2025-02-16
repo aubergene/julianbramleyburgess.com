@@ -1,10 +1,14 @@
-import { works_by_slug, load_work_images } from '$lib/data/works.js';
+import { work_by_slug, images_by_slug } from '$lib/data/works.js';
+import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async ({ params }) => {
 	const { slug } = params;
-	const work = works_by_slug.get(slug);
-	const work_images = await load_work_images;
+	const work = work_by_slug(slug);
+
+	if (!work) error(404);
+
+	const work_images = await images_by_slug(slug);
 
 	return {
 		slug,

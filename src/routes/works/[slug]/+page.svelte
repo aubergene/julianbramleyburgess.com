@@ -14,9 +14,9 @@
 			</p>
 		</div>
 		<div>
-			{#each work.images as image}
-				{@const img = work_images.get(`/${work.slug}/${image}`)}
-				<img src={img.src} width={img.width} height={img.height} alt={work.name} />
+			{#each work_images as img}
+				<!-- <img src={img.src} width={img.width} height={img.height} alt={work.name} /> -->
+				<enhanced:img src={img.default} alt="some alt text" />
 			{/each}
 		</div>
 	</div>
