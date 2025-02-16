@@ -5,6 +5,7 @@
 </script>
 
 <section class="container">
+	<h1>Works</h1>
 	<div class="works">
 		{#each works_index as { slug, name, year, lead_img }}
 			<div class="work">
