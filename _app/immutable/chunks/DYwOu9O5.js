@@ -1,0 +1,1 @@
+const c="Julian Bramley Burgess",e="hello@julianbramleyburgess.com";function a(n,o={}){const r={word_connector:", ",last_word_connector:" and ",two_words_connector:" and ",...o};return n=t(n),n.length<2?n:n.length==2?n.join(r.two_words_connector):n.slice(0,-2).join(r.word_connector)+r.last_word_connector+n.at(-1)}function t(n){return n.filter(o=>o!=null)}export{e,c as s,a as t};
