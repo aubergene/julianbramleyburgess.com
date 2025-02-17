@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import '@fontsource/roboto-condensed/300.css';
 	import '@fontsource/roboto-condensed/400.css';
 	import '../app.scss';
@@ -12,11 +12,13 @@
 	}
 
 	let { children }: Props = $props();
+
+	const PROJECT_ID = '4cb076b9-b8ef-4d36-bc1e-fcdcd002408c';
 </script>
 
 <svelte:head>
 	<title>
-		{to_sentence([$page.data.title, site_name], {
+		{to_sentence([page.data.title, site_name], {
 			two_words_connector: ' | ',
 		})}
 	</title>
@@ -29,3 +31,6 @@
 {@render children?.()}
 
 <Footer />
+
+<!-- svelte-ignore a11y_missing_attribute -->
+<img src="https://app.piratepx.com/ship?p={PROJECT_ID}&i={page.url.pathname}" />
