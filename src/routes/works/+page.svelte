@@ -10,7 +10,7 @@
 		{#each works_index as { slug, name, year, lead_img }}
 			<div class="work">
 				<div class="thumb">
-					<a href="/works/{slug}">
+					<a href="/works/{slug}" title={name}>
 						<enhanced:img src={lead_img.default} alt={slug} />
 					</a>
 				</div>

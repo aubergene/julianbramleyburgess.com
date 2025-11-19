@@ -16,7 +16,7 @@
 		<div>
 			{#each work_images as img, i}
 				<div class="img">
-					<enhanced:img src={img.default} alt="{work.name} {i}" />
+					<enhanced:img src={img} alt="{work.name} {i}" />
 				</div>
 			{/each}
 		</div>
