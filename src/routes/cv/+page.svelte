@@ -19,7 +19,7 @@
 						<span class="work">
 							<LinkMaybe href={e.work_url}>{e.work}</LinkMaybe>
 						</span>
-						{#if e.show_name}—{/if}
+						<span class="dash" class:hidden={!e.show_name}>—</span>
 						<span class="show">
 							<LinkMaybe href={e.show_url}>{e.show_name}</LinkMaybe>
 						</span>
@@ -60,5 +60,8 @@
 		display: block;
 		color: var(--pico-muted-color);
 		font-size: smaller;
+	}
+	.dash.hidden {
+		visibility: hidden;
 	}
 </style>
