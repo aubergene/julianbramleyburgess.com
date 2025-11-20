@@ -16,5 +16,6 @@ export const load: PageServerLoad = async () => {
 	return {
 		works_index,
 		title: 'Works',
+		description: 'A portfolio of art works by Julian Bramley Burgess',
 	};
 };

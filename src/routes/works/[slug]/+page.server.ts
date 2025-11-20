@@ -15,5 +15,6 @@ export const load: PageServerLoad = async ({ params }) => {
 		work,
 		title: work.name,
 		work_images,
+		description: work.description,
 	};
 };

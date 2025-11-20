@@ -22,6 +22,12 @@
 			two_words_connector: ' | ',
 		})}
 	</title>
+	{#if page.data.keywords}
+		<meta name="keywords" content={page.data.keywords.join(', ')} />
+	{/if}
+	{#if page.data.description}
+		<meta name="description" content={page.data.description} />
+	{/if}
 </svelte:head>
 
 <header>
